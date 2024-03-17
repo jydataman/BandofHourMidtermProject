@@ -3,43 +3,43 @@ Joshua Yepes
 
 
 1. Create 2d Array to store weight of musicians
-1. Input from user
-A1. Get row number 
-* Cast into a char
-A2. Get Column number(positions)
-2. Validate users input
-B1. Max Number of Rows is 10
-B2. Max number of positions is 8
+     A Input from user
+          A1. Get row number 
+               * Cast into a char
+          A2. Get Column number(positions)
+     B. Validate users input
+          B1. Max Number of Rows is 10
+          B2. Max number of positions is 8
 
 
      2. Create Menu
 ****The menu should loop until ‘X’ is entered and only accepts, Add, Remove, Print, and Exit as inputs.
-1. Add
-A1.Input
-* Receive Row letter
-* Receive Position Number
-* Receive Weight of Musician
-A2. Validate
-* Row letter needs to be in the range of the 2d array
-* Position number needs to be in range of the 2d array and also make sure its empty so a musician can be added
-* Weight needs to be in a range from 45kg to 200kg and needs to make sure that the Total weight does not exceed 100kg per position.
-A3. Store
-* After the input and validation, the Musicians weight is stored successfully into the 2d array
-2. Remove
-B1.Input
-* Receive Row letter
-* Receive Position Number
-B2. Validate
-* Row letter needs to be in the range of the 2d array
-* Position number needs to be in range of the 2d array and also make sure its occupied so a musician can be removed
-B3. Store
-* After the input and validation, the Musicians weight is successfully removed in the 2d array
-3. Print
-C1.Row Letter
-C2. Column position
-* In each row there should be the total weight and the average weight. The total weight and basically the average weight is validated in the add musician section. So In the print method all it does is to receive what is the total weight and average weight.
-C3. Output Formatting
-* And in the output formatting part of the print method, it simply neatly outputs the total weight and average weight next to the 2d array output.
-* Each row needs different spacing so the total weight and average weight align nicely. So a calculation is needed in this portion of the print method to space nicely and make sure they look aligned in each row using: spacesBeforeBracket = 40- 2DArray[RowIndex].length * 7;
-4. Exit
-D1. Exits program
+     A. Add
+          A1.Input
+               * Receive Row letter
+               * Receive Position Number
+               * Receive Weight of Musician
+          A2. Validate
+               * Row letter needs to be in the range of the 2d array
+               * Position number needs to be in range of the 2d array and also make sure its empty so a musician can be added
+               * Weight needs to be in a range from 45kg to 200kg and needs to make sure that the Total weight does not exceed 100kg per position.
+          A3. Store
+               * After the input and validation, the Musicians weight is stored successfully into the 2d array
+B. Remove
+          B1.Input
+               * Receive Row letter
+               * Receive Position Number
+          B2. Validate
+               * Row letter needs to be in the range of the 2d array
+               * Position number needs to be in range of the 2d array and also make sure its occupied so a musician can be removed
+          B3. Store
+               * After the input and validation, the Musicians weight is successfully removed in the 2d array
+C. Print
+          C1.Row Letter
+          C2. Column position
+               * In each row there should be the total weight and the average weight. The total weight and basically the average weight is validated in the add musician section. So In the print method all it does is to receive what is the total weight and average weight.
+          C3. Output Formatting
+               * And in the output formatting part of the print method, it simply neatly outputs the total weight and average weight next to the 2d array output.
+               * Each row needs different spacing so the total weight and average weight align nicely. So a calculation is needed in this portion of the print method to space nicely and make sure they look aligned in each row using: spacesBeforeBracket = 40- 2DArray[RowIndex].length * 7;
+D. Exit
+          D1. Exits program
