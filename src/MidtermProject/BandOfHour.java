@@ -127,7 +127,7 @@ public class BandOfHour {
      * @param bandArrangementData The 2D array representing the band arrangement.
      */
 
-    private static void printArray(double[][] bandArrangementData) {
+    public static void printArray(double[][] bandArrangementData) {
         int spacesBeforeBracket;
         char rowLetter;
         double totalWeight;
@@ -163,7 +163,7 @@ public class BandOfHour {
      * @return The total weight of musicians in the row.
      */
 
-    private static double calculateTotalWeight(double[] rowPositions) {
+    public static double calculateTotalWeight(double[] rowPositions) {
         double totalWeight = 0;
 
         for (double weight : rowPositions) {
@@ -181,7 +181,7 @@ public class BandOfHour {
      * @return The average weight of musicians in the row.
      */
 
-    private static double calculateAverageWeight(double[] rowPositions) {
+    public static double calculateAverageWeight(double[] rowPositions) {
         double totalWeight;
         int numPositions;
         double averageWeight;
