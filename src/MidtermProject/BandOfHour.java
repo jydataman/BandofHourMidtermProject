@@ -40,7 +40,7 @@ public class BandOfHour {
     /**
      * The main method of the program.
      * It prompts the user to input the number of rows and positions,
-     * initializes the band arrangement data, and displays the menu for managing musicians.
+     * initializes the band arrangement data, and s the menu for managing musicians.
      *
      * @param args Command-line arguments.
      */
@@ -230,7 +230,7 @@ public class BandOfHour {
             else if (bandArrangementData[rowIndex][positionIndex - 1] != 0) {
                 System.out.println("ERROR: There is already a musician there.");
                 System.out.println(" ");
-                displayMenu(bandArrangementData);
+                return;
             }
         } while (validatePosition(positionIndex, bandArrangementData[rowIndex]));
 
@@ -248,7 +248,8 @@ public class BandOfHour {
             if (totalWeight + weight > maxWeightPerRow) {
                 System.out.println("ERROR: That would exceed the average weight limit");
                 System.out.println(" ");
-                displayMenu(bandArrangementData);
+                return;
+               
 
             } else if (validateWeight(weight)) {
                 System.out.println("Invalid weight. Please enter a weight between " + MIN_WEIGHT + " and " + MAX_WEIGHT);
@@ -341,7 +342,7 @@ public class BandOfHour {
             } else if (bandArrangementData[rowIndex][positionIndex - 1] == 0) {
                 System.out.println("ERROR: That position is vacant.");
                 System.out.println(" ");
-                displayMenu(bandArrangementData);
+                return;
             } else {
                 validInput = true;
             }
